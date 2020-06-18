@@ -15,6 +15,8 @@ myfont = pygame.font.SysFont('Arial', 48)
 textsurface = myfont.render('P', False, (0, 0, 0))
 
 
+#Run Loop
+
 run = True
 while run:
     for event in pygame.event.get():
@@ -32,3 +34,5 @@ while run:
     screen.blit(textsurface,(150 - (textsurface.get_rect().width/2), 50 - (textsurface.get_rect().height/2)))
 
     pygame.display.update()
+
+
